@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+  background-color: black;
+  color: white;
+   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-1 {
+  display: flex;
+  gap: 25px;
+}
+.nav-1 a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.nav-1 a:hover{
+  color: goldenrod;
+}
+
+.nav-1 i:hover{
+  color: goldenrod;
+}
+.nav-1 a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+.content img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.content h2{
+  position: absolute;
+  top: 35%;          
+  left: 17%; 
+  font-size: 15px;         
+  transform: translate(-50%); 
+  color: white;      
+  text-align: center;
+  font-size: 30px;
+}
+.content p{
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.content a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  color: white;
+  border-radius: 30px;
+  margin-top: 20px;
+
+}
+.content a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+main{
+  justify-content: space-between;
+}
+      footer {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: #212529;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 30px;
+}
+footer .hero {
+  flex: 1 1 100px;
+  margin: 10px;
+  
+}
+
+footer .hero h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 150px;
+}
+footer p{
+    cursor: pointer;
+    margin-left: 150px;
+}
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES  */
+/* ========================= */
+
+/* Large devices (>=1200px) */
+@media (min-width: 1200px) {
+  .content h2 {
+    font-size: 35px;
+    left: 20%;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, >=768px and <1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .content h2 {
+    top: 30%;
+    left: 25%;
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .content p {
+    top: 40%;
+    left: 5%;
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .content a {
+    top: 65%;
+    left: 5%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 0;
+  }
+}
+
+/* Small devices (mobile phones, <768px) */
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .content img {
+    height: auto;
+  }
+
+  .content h2 {
+    position: static;
+    font-size: 22px;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .content p {
+    position: static;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .content a {
+    position: static;
+    display: inline-block;
+    margin: 20px auto;
+    left: auto;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 0;
+  }
+}

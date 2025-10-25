@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+  background-color: black;
+  color: white;
+   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-1 {
+  display: flex;
+  gap: 25px;
+}
+.nav-1 a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.nav-1 a:hover{
+  color: goldenrod;
+}
+
+.nav-1 i:hover{
+  color: goldenrod;
+}
+.nav-1 a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+.read{
+    color: white;
+    background-color: #36404a;
+    height: 700px;
+    /* display: flex; */
+    align-items: center;
+    padding: 0 5%;
+}
+.read img{
+   height: 500px;
+   margin-left: 80px;
+   margin-top: 40px;
+
+}
+
+.read h4{
+    margin-left: 40rem;
+    padding: 10px 25px;
+      position: absolute;
+      top: 35%;          
+      left: 10%; 
+      font-size: 15px;         
+     transform: translate(-50%); 
+     font-style: italic;
+     font-size: 20px;
+}
+.read p{
+     position: absolute;
+     margin-top: 20px;
+     top: 40%;
+     left: 55%;
+     color: white;
+     font-size: 15px;
+     width: 400px;
+      word-wrap: break-word;
+}
+
+.read a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  margin-top: 85px;
+  color: white;
+  border-radius: 30px;
+}
+.read a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+      footer {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: #212529;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 30px;
+}
+footer .hero {
+  flex: 1 1 100px;
+  margin: 10px;
+  
+}
+
+footer .hero h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 150px;
+}
+footer p{
+    cursor: pointer;
+    margin-left: 150px;
+}
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES  */
+/* ========================= */
+
+/* Large screens (>=1200px) */
+@media (min-width: 1200px) {
+  .read h4 {
+    font-size: 25px;
+    left: 15%;
+  }
+
+  .read p {
+    font-size: 18px;
+    width: 500px;
+  }
+}
+
+/* Medium devices (tablets, >=768px and <1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .read {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .read img {
+    height: 350px;
+    margin: 20px 0;
+  }
+
+  .read h4 {
+    position: static;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .read p {
+    position: static;
+    font-size: 15px;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .read a {
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 0;
+  }
+}
+
+/* Small devices (mobiles, <768px) */
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .read {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .read img {
+    height: 250px;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .read h4 {
+    position: static;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .read p {
+    position: static;
+    width: 90%;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .read a {
+    position: static;
+    display: inline-block;
+    margin: 20px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 0;
+  }
+}

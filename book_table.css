@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: white;
+  background-color: black; */
+}
+.nav{
+  background-color: black;
+  color: white;
+   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-1 {
+  display: flex;
+  gap: 25px;
+}
+.nav-1 a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.nav-1 a:hover{
+  color: goldenrod;
+}
+.nav-1 i:hover{
+  color: goldenrod;
+}
+.nav-1 a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+.booking-section{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+
+}
+.table{
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 19%;
+}
+
+form {
+  flex: 1;
+  max-width: 700px;
+}
+.table-content input{
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.book {
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+.book a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  background-color: goldenrod;
+  border-radius: 30px;
+}
+.book a:hover{
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+.map{
+  flex: 1;
+  /* border-radius: 50px;
+  background-color: azure;
+  width: 500px; */
+ 
+}
+.map iframe {
+  width: 60%;
+  height: 440px;
+  /* margin-left: 100px; */
+  border: none;
+   margin-bottom: 35px;
+}
+      footer {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: #212529;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 30px;
+}
+footer .hero {
+  flex: 1 1 100px;
+  margin: 10px;
+  
+}
+
+footer .hero h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 150px;
+}
+footer p{
+    cursor: pointer;
+    margin-left: 150px;
+}
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES  */
+/* ========================= */
+
+/* Large devices (>=1200px) */
+@media (min-width: 1200px) {
+  .booking-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .map iframe {
+    width: 500px;
+  }
+}
+
+/* Medium devices (tablets, >=768px and <1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .booking-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .table {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .table-content input {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .book {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .map iframe {
+    width: 80%;
+    margin: 40px auto;
+    display: block;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 50px;
+  }
+}
+
+/* Small devices (mobile phones, <768px) */
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .booking-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .table-content input {
+    width: 90%;
+    margin-left: 0;
+    display: block;
+  }
+
+  .book {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .map iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .hero h2,
+  footer p {
+    margin-left: 0;
+  }
+}
